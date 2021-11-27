@@ -11,10 +11,10 @@ const CartItem = ({item, onUpdateCartQty, onRemoveFromCart}) => {
                 <Typography variant='h6'>{item.name} </Typography>
                 <Typography variant='h6'>{item.line_total.formatted_with_symbol} </Typography>
             </CardContent>
-            <CardActions className={classes.cardAction} >
+            <CardActions className={classes.cartActions} >
                 <div className={classes.buttons}>
                     <Button type='button' size='small' onClick={() => onUpdateCartQty(item.id, item.quantity -1)}>-</Button>
-                    <Typography>{item.quantity}</Typography>
+                    <Typography className={classes.quantity}> {item.quantity} </Typography>
                     <Button type='button' size='small' onClick={() => onUpdateCartQty(item.id, item.quantity +1)}>+</Button>
                 </div>
                 <Button color="secondary" onClick={() => onRemoveFromCart(item.id)}>Remove</Button>

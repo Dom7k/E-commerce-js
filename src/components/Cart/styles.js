@@ -7,6 +7,7 @@ export default makeStyles((theme) => ({
   },
   emptyButton: {
     minWidth: '100px',
+    fontWeight: '600',
     [theme.breakpoints.down('xs')]: {
       marginBottom: '5px',
     },
@@ -16,9 +17,11 @@ export default makeStyles((theme) => ({
   },
   checkoutButton: {
     minWidth: '100px',
+    fontWeight: '600',
   },
   link: {
     textDecoration: 'none',
+    color: 'orange',
   },
   cardDetails: {
     display: 'flex',

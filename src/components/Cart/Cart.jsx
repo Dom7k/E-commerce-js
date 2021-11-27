@@ -35,7 +35,8 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
           >
             Empty Cart
           </Button>
-          <Button
+          <Button 
+            component={Link} to='/checkout'
             className={classes.checkoutButton}
             color="primary"
           >

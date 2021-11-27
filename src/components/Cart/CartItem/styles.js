@@ -15,4 +15,7 @@ export default makeStyles(() => ({
     display: 'flex',
     alignItems: 'center',
   },
+  quantity: {
+    padding: '0 5px',
+  }
 }));
